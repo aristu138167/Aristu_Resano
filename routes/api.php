@@ -1,6 +1,7 @@
 <?php
 
 use App\Infrastructure\Controllers\GetEarlyAdopterController;
+use App\Infrastructure\Controllers\GetGlobalProviderUsersController;
 use App\Infrastructure\Controllers\GetUserController;
 use App\Infrastructure\Controllers\GetUsersController;
 use App\Infrastructure\Controllers\IsEarlyAdopterUserController;
@@ -23,4 +24,5 @@ Route::get('/status', GetStatusController::class);
 Route::get('/users/{email}', GetUserController::class);
 Route::get('/users', GetUsersController::class);
 Route::get('/users/early-adopter/{email}', GetEarlyAdopterController::class);
+Route::get('/global-provider-users', GetGlobalProviderUsersController::class);
 
