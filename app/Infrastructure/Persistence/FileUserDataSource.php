@@ -14,6 +14,6 @@ class FileUserDataSource implements UserDataSource
 
     public function getAll(): array
     {
-        return [new User(1, "email@email.com"), new User(2, "another_email@email.com")];
+        return [new User(1, "email@gmail.com"), new User(2, "another_email@hotmail.com")];
     }
 }
