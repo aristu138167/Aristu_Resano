@@ -27,7 +27,7 @@ class GetEarlyAdopterController extends BaseController
         }
         else{
             $id= $user->getId();
-            if ($id<1000){
+            if ($id<100){
                 return response()->json([
                     'El usuario es early adopter',
                 ], 200);
